@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+  int n,i,sum=0,t,r;
+  printf("Enter number");
+  scanf("%d",&n);
+  t=n;
+  while(n>0)
+  {
+    r=n%10;
+    sum=sum+r;
+    n=n/10;
+    
+  }
+  if(t%sum==0)
+  {
+    printf("HARSHAD NUMBER");
+  }
+  else
+  {
+    printf("NOT A HARSHAD NUMBER");
+  }
+  return 0;
+}
